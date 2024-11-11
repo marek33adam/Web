@@ -1,0 +1,71 @@
+.pokladna {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .pokladna__header {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    background-color: #f90b0b;
+    color: #dff802;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  .pokladna__nabidka {
+    grid-column: 1 / 3;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    padding: 1em;
+  }
+  
+  .nabidka__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    border: 1px solid #fd0505;
+    border-radius: 1em;
+    box-shadow: 0 0 10px rgba(239, 4, 4, 0.1);
+  }
+  
+  .nabidka__item img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 1em 1em 0 0;
+  }
+  
+  .pokladna__objednávka {
+    grid-column: 3;
+    grid-row: 2;
+    padding: 1em;
+  }
+  
+  .pokladna__footer {
+    grid-column: 1 / 4;
+    grid-row: 3;
+    background-color: #ef0505;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  .pokladna__tlacitka {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+  }
+  
+  .pokladna__tlacitko {
+    background-color: #f9dd09;
+    color: #000000;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0.5em;        
+  }   
